@@ -1,0 +1,6 @@
+/.prettierrc
+/gulpfile.js
+/img
+/node_modules
+/package-lock.json
+/package.json

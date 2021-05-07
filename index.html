@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/scss/styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/af0ef3074c.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Meditation</title>
+    </head>
+    <body>
+        <div class="animation">
+            <img class="logo1" src="/img/logo1.svg" />
+
+            <img class="background" src="/img/background.png" />
+            <img class="woman" src="/img/woman.png" />
+            <img class="lotus" src="/img/lotus.png" />
+
+            <h1 class="main-title">
+                Welcome to your short <br />
+                time out <span><i class="fas fa-leaf"></i></span>
+            </h1>
+        </div>
+        <div class="app">
+            <img class="logo2" src="/img/logo2.svg" />
+
+            <div class="vid-container">
+                <video loop>
+                    <source src="./img/beach-video.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="time-select fadeIn">
+                <button id="btn1" data-time="120">
+                    two<br />
+                    Minutes
+                </button>
+                <button id="btn2" data-time="300">
+                    five<br />
+                    Minutes
+                </button>
+                <h2 class="time-display">0:00</h2>
+            </div>
+            <div class="player-container">
+                <audio class="song">
+                    <source src="img/beach-music.mp3" />
+                </audio>
+                <img
+                    src="../img/play-circle-regular.svg"
+                    alt="play"
+                    class="play"
+                />
+            </div>
+            <div class="sound-picker fadeIn">
+                <button
+                    onclick="keepColor()"
+                    data-sound="./img/beach-music.mp3"
+                    data-video="./img/beach-video.mp4"
+                >
+                    <img src="./img/sun-solid.svg" alt="sun" />
+                </button>
+                <button
+                    onclick="keepColor()"
+                    data-sound="./img/rain-music.mp3"
+                    data-video="./img/rain-video.mp4"
+                >
+                    <img src="./img/cloud-rain-solid.svg" alt="rain" />
+                </button>
+                <button
+                    onclick="changeColor()"
+                    data-sound="./img/snow-music.mp3"
+                    data-video="./img/snow-video.mp4"
+                >
+                    <img src="./img/snowflake-solid.svg" class="snow" />
+                </button>
+            </div>
+        </div>
+        <div class="banner">
+            <span><i class="fas fa-om"></i></span>
+            <h2>
+                Join my newsletter for more relaxing videos and tunes and to get
+                the latest thoughts on becoming calmer and finding inner peace.
+            </h2>
+        </div>
+        <div class="form">
+            <div class="container">
+                <div class="contactInfo">
+                    <ul class="contact">
+                        <h2>Contact Info</h2>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                111 Main Street<br />
+                                Los Angeles, CA<br />
+                                90017
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@mail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-square-alt"></i>
+                            <span>310-556-6689</span>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li>
+                            <a href="#"
+                                ><i class="fab fa-twitter-square fa-3x"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fab fa-instagram-square fa-3x"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fab fa-pinterest-square fa-3x"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fab fa-facebook-square fa-3x"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactForm">
+                    <h2>Send a Message</h2>
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" required />
+                            <span>Your Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" required />
+                            <span>Your Email</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+            integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
